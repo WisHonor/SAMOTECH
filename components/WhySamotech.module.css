@@ -1,0 +1,42 @@
+.heading {
+  margin-bottom: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 32px;
+  border-top: 3px solid var(--navy);
+}
+
+.number {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  letter-spacing: 0.1em;
+}
+
+.card h3 {
+  margin: 16px 0 12px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--ink-3);
+}
+
+.note {
+  margin: 32px 0 0;
+  font-size: 15px;
+  color: var(--ink-3);
+}

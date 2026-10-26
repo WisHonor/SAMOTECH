@@ -1,0 +1,62 @@
+.footer {
+  background: var(--navy-deep);
+  color: #c4cedb;
+  font-size: 15px;
+}
+
+.footer a {
+  color: #c4cedb;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(56px, 7vw, 80px) var(--gutter) 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 40px;
+}
+
+.logoBox {
+  display: inline-block;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+.heading {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 24px 0 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  color: #9faabb;
+}
+
+.footer .bottom a {
+  color: #9faabb;
+}
+
+.footer .bottom a:hover {
+  color: #fff;
+}

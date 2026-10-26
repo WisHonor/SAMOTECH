@@ -1,0 +1,145 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  color: #fff;
+}
+
+.gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #1b2b4b 0%, #1b2b4b 38%, #1d3e6b 72%, #22598f 100%);
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.ringOuter {
+  width: 760px;
+  height: 760px;
+  right: -260px;
+  top: -200px;
+  border: 1px solid rgba(46, 139, 201, 0.35);
+}
+
+.ringInner {
+  width: 520px;
+  height: 520px;
+  right: -140px;
+  top: -80px;
+  border: 1px solid rgba(46, 139, 201, 0.22);
+}
+
+.inner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(72px, 11vw, 136px) var(--gutter) clamp(120px, 14vw, 180px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+.copy {
+  flex: 1 1 520px;
+  min-width: 0;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--blue-pale);
+}
+
+.rule {
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: var(--blue-bright);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(36px, 5.2vw, 60px);
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  margin: 24px 0 0;
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.65;
+  color: var(--on-dark);
+  max-width: 600px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.panel {
+  flex: 0 1 380px;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.panelLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--blue-pale);
+  margin-bottom: 12px;
+}
+
+.panelList {
+  display: flex;
+  flex-direction: column;
+}
+
+.panelLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-weight: 600;
+}
+
+.panelLink:last-child {
+  padding-bottom: 4px;
+  border-bottom: none;
+}
+
+.panelLink:hover {
+  color: var(--blue-pale);
+}
+
+.panelLink span {
+  color: var(--blue-bright);
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: clamp(56px, 8vw, 120px);
+  display: block;
+}

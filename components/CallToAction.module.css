@@ -1,0 +1,52 @@
+.cta {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  color: #fff;
+}
+
+.ring {
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  left: -220px;
+  bottom: -320px;
+  border-radius: 50%;
+  border: 1px solid rgba(46, 139, 201, 0.35);
+}
+
+.inner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(64px, 8vw, 96px) var(--gutter);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.copy {
+  flex: 1 1 520px;
+  min-width: 0;
+}
+
+.copy h2 {
+  margin: 0;
+  font-size: clamp(28px, 3.2vw, 38px);
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+}
+
+.copy p {
+  margin: 14px 0 0;
+  font-size: 18px;
+  color: var(--on-dark);
+}
+
+.button {
+  flex: none;
+  padding: 18px 32px;
+}

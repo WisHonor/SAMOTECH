@@ -1,0 +1,128 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: saturate(1.4) blur(8px);
+  border-bottom: 1px solid var(--mist);
+  transition: box-shadow 0.3s ease;
+}
+
+.scrolled {
+  box-shadow: 0 6px 24px -12px rgba(27, 43, 75, 0.22);
+}
+
+.bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--navy);
+}
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.links a {
+  color: var(--navy);
+}
+
+.links a:hover {
+  color: var(--blue);
+}
+
+.cta {
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--navy);
+  color: #fff;
+}
+
+.toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--navy);
+  border-radius: 2px;
+}
+
+.mobileNav {
+  display: none;
+  border-top: 1px solid var(--mist);
+  background: #fff;
+  padding: 8px var(--gutter) 24px;
+  flex-direction: column;
+  box-shadow: 0 12px 24px rgba(27, 43, 75, 0.08);
+}
+
+.mobileNav a {
+  color: var(--navy);
+  font-weight: 600;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--mist);
+}
+
+.mobileNav a.mobileCta {
+  margin-top: 20px;
+  background: var(--blue);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 22px;
+  border-radius: 6px;
+  border-bottom: none;
+}
+
+@media (max-width: 899px) {
+  .desktopNav {
+    display: none;
+  }
+  .toggle,
+  .mobileNav {
+    display: flex;
+  }
+}

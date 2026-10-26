@@ -1,0 +1,50 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 36px 32px;
+  box-shadow: 0 1px 2px rgba(27, 43, 75, 0.04);
+}
+
+/* Higher specificity than the reveal rule so hover lift and reveal transitions coexist. */
+:global(.reveal-ready) .card[data-reveal],
+.card {
+  transition: opacity 0.8s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+:global(.reveal-ready) .card[data-reveal]:global(.is-visible):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px -18px rgba(27, 43, 75, 0.25);
+}
+
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  background: var(--blue-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--ink-3);
+}
